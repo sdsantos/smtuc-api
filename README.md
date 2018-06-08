@@ -31,7 +31,7 @@ Baseada na aplicação web http://coimbra.move-me.mobi
 ### Horário de linha
 
 ```
-POST http://62.28.187.230/Scheds/Select
+POST http://coimbra.move-me.mobi/Scheds/Select
 ```
 
 _Body: x-www-form-urlencoded_
@@ -51,7 +51,7 @@ Reposta em HTML com os horários numa tabela.
 
 ### Pesquisa paragem por keyword
 
-`POST http://62.28.187.230/Find/SearchByStops?keyword=ctt`
+`POST http://coimbra.move-me.mobi/Find/SearchByStops?keyword=ctt`
 
 ```
 SMTUC - Ctt [SMTUC_1473];SMTUC - S. Martinho (Ctt) [SMTUC_1240];SMTUC - S. Martinho (Ctt) [SMTUC_1241];
