@@ -57,6 +57,14 @@ Reposta em HTML com os horários numa tabela.
 SMTUC - Ctt [SMTUC_1473];SMTUC - S. Martinho (Ctt) [SMTUC_1240];SMTUC - S. Martinho (Ctt) [SMTUC_1241];
 ```
 
+### Pesquisa paragem por localização e raio
+
+`GET http://coimbra.move-me.mobi/Stops/GetStops?oLat=40.20343598944182&oLon=-8.417298279776674&meters=200`
+
+```
+[{"Name":"Combatentes ","Code":"SMTUC_1637","Type":1,"CoordX":40.203170776367188,"CoordY":-8.41732406616211,"Provider":"SMTUC","Restriction":0,"Zoning":null},{"Name":"Combatentes 1","Code":"SMTUC_1634","Type":1,"CoordX":40.202980041503906,"CoordY":-8.4194126129150391,"Provider":"SMTUC","Restriction":0,"Zoning":null},{"Name":"Combatentes 2","Code":"SMTUC_1638","Type":1,"CoordX":40.203151702880859,"CoordY":-8.416473388671875,"Provider":"SMTUC","Restriction":0,"Zoning":null},{"Name":"Júlio Henriques","Code":"SMTUC_1633","Type":1,"CoordX":40.203800201416016,"CoordY":-8.4194784164428711,"Provider":"SMTUC","Restriction":0,"Zoning":null},{"Name":"Marnoco E Sousa 1","Code":"SMTUC_1635","Type":1,"CoordX":40.203639984130859,"CoordY":-8.41872501373291,"Provider":"SMTUC","Restriction":0,"Zoning":null},{"Name":"P. Saudade","Code":"SMTUC_1636","Type":1,"CoordX":40.204811096191406,"CoordY":-8.4157190322875977,"Provider":"SMTUC","Restriction":0,"Zoning":null}]```
+```
+
 ### Horário em tempo real da paragem
 
 `GET http://coimbra.move-me.mobi/NextArrivals/GetScheds?providerName=SMTUC&stopCode=SMTUC_1473`
